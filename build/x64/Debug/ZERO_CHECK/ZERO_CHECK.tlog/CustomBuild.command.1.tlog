@@ -1,0 +1,10 @@
+^F:\STUDY\VSCODE_TMP\LIBTEST\BUILD\CMAKEFILES\DE837058B7748EED51691FF1D752AD61\GENERATE.STAMP.RULE
+setlocal
+C:\cmake-3.25.1-windows-x86_64\bin\cmake.exe -SF:/study/vsCode_tmp/libTest -BF:/study/vsCode_tmp/libTest/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/study/vsCode_tmp/libTest/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
